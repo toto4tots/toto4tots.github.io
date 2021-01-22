@@ -1,0 +1,22 @@
+
+
+h2 {
+    font-family: 'Lora', serif;
+}
+div {
+    font-family: 'Karla', sans-serif;
+}
+
+ul {
+    /* list-style-position: inside; */
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#intro {
+    /* height: 200px; */
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;    
+}
