@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Render</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400&family=Lora&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <script src=render.js></script>
+        <script src=renderPage.js></script>
+        <header>
+            <a href="index.html">Home</a>
+        </header>
+        <div>
+            <div>
+                <h2>Render an obj file</h2>
+                
+                <textarea id="objString" placeholder="Enter obj content"></textarea>
+                <canvas id="picture" width="100" height="50"></canvas>
+            </div>
+            <div>
+                <label for="width">Width</label>
+                <input name="width", id="width" type="text"><br>
+                <label for="height">Height</label>
+                <input name="height" id="height" type="text"><br>
+                <input id="button" type="submit" name="button"
+                    onclick="render(document.getElementById('width').value, document.getElementById('height').value);"
+                    value="submit" />
+                <input id="button" type="submit" name="clear" value="clear" onclick="reload()"/>
+            </div>
+        </div>
+
+        <div id="examples">
+            <h2>Examples</h4>
+                <div>
+                    <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/gourd.obj">Gourd</a><br/>
+                    <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/dodecahedron.obj">Dodecahedron</a><br/>
+                    <a href="https://groups.csail.mit.edu/graphics/classes/6.837/F03/models/teapot.obj">Teapot</a>
+                </div>
+                <a><img src="teapot.png"></a>
+
+        </div>
+        
+        <div id="references">
+            <h2>References</h2>
+            <ul>
+                <li>The Ray Tracer Challenge by Jamis Buck</li>
+            </ul>
+        </div>
+    </body>
+</html>
