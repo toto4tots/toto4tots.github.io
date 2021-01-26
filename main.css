@@ -21,23 +21,14 @@ ul {
     padding-left: 0;
 }
 
-body {
-    margin-left: 100;
-}
 
-textarea {
-    vertical-align: top;
-    height:600;
-    width: 300;
-    resize:none;
-    display: inline-block
-
-}
 
 #intro {
     /* height: 200px; */
-    width: 70%;
+    /* width: 70%;
     margin: 0 auto;
     position: relative;
-    top: 100px;    
+    top: 100px;     */
+    text-align: center;
+    padding-top: 50;
 }

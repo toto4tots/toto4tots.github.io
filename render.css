@@ -1,0 +1,13 @@
+
+body {
+    margin-left: 100;
+}
+
+textarea {
+    vertical-align: top;
+    height:600;
+    width: 300;
+    resize:none;
+    display: inline-block
+
+}
