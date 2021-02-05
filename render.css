@@ -8,6 +8,10 @@ textarea {
     height:600;
     width: 300;
     resize:none;
-    display: inline-block
+    display: inline-block;
+}
 
+.light-coord {
+    width: 30;
+    margin-right: 15px;
 }

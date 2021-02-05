@@ -740,9 +740,9 @@ function main(fileName) {
     var canvas = camera.render(world);
     canvas.write("out/" + fileName + ".bmp");
 }
-function create(data, width, height, f) {
+function create(data, width, height, lightCoord, f) {
     var triangles = getTrianglesFromString(data);
-    var worldLight = new PointLight(newPoint(-10, 10, -10), newColor(1, 1, 1));
+    var worldLight = new PointLight(newPoint(lightCoord[0], lightCoord[1], -10), newColor(1, 1, 1));
     var world = new World(worldLight, triangles);
     var camera = newCamera(width, height, Math.PI / 3);
     camera.transform = viewTransform(newPoint(0, 1.5, -5), newPoint(0, 1, 0), newVector(0, 1, 0));

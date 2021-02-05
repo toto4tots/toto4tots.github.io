@@ -16,7 +16,7 @@
             <div>
                 <h2>Render an obj file</h2>
                 
-                <textarea id="objString" placeholder="Enter obj content"></textarea>
+                <textarea id="obj-string" placeholder="Enter obj content"></textarea>
                 <canvas id="picture" width="100" height="50"></canvas>
             </div>
             <div>
@@ -24,16 +24,23 @@
                 <input name="width", id="width" type="text"><br>
                 <label for="height">Height</label>
                 <input name="height" id="height" type="text"><br>
+                <div>Light Coordinate</div>
+                <label for="light-x">x</label>
+                <input id="light-x" class="light-coord" type="text">
+                <label for="light-y">y</label>
+                <input id="light-y" class="light-coord" type="text"><br>
                 <input id="button" type="submit" name="button"
-                    onclick="render(document.getElementById('width').value, document.getElementById('height').value);"
+                    onclick="render(document.getElementById('width').value, 
+                    document.getElementById('height').value, 
+                    [document.getElementById('light-x').value, document.getElementById('light-y').value]);"
                     value="submit" />
                 <input id="button" type="submit" name="clear" value="clear" onclick="reload()"/>
             </div>
         </div>
 
         <div id="examples">
-            <h2>Examples</h4>
                 <div>
+                    <h2>Examples</h4>
                     <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/gourd.obj">Gourd</a><br/>
                     <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/dodecahedron.obj">Dodecahedron</a><br/>
                     <a href="https://groups.csail.mit.edu/graphics/classes/6.837/F03/models/teapot.obj">Teapot</a>
