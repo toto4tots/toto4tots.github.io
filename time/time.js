@@ -1,5 +1,5 @@
 
-// model
+
 function numToHex(num) {
     if (num === 0) {
         return "00";
@@ -63,7 +63,7 @@ function calculateTimeSpent(start) {
     return Math.floor((now - start) / 1000);
 }
 
-// view
+
 function displayHex() {
     const timeHex = timeToHex();
     const revTimeHex = timeHex.split("").reverse().join("");
@@ -80,12 +80,11 @@ function formatKST(timeArr) {
     if (timeArr[0] > 12) {
         night = true;
     }
+    let hour = timeArr[0] % 12;
     if (timeArr[0] === 0) {
-        timeArr[0] += 12;
-    }
-    let hour = (timeArr[0] % 12).toString();
-    return [hour, timeArr[1]].join(":") + (night ? "pm" : "am");
-
+        hour += 12;
+    }    
+    return [hour.toString(), timeArr[1]].join(":") + (night ? "pm" : "am");
 }
 
 function displayKST() {
@@ -112,8 +111,6 @@ function displayTimeSpent(start) {
     elem.textContent = spent + "s";
 }
 
-// control
-
 function main() {
     const lifeRange = getLifeYearRange();
     let start = new Date().getTime();
@@ -124,9 +121,6 @@ function main() {
         displayLifeExpect(lifeRange);
         displayTimeSpent(start);
     }, 1000);
-
 }
 
 main();
-
-
