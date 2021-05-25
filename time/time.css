@@ -1,0 +1,28 @@
+
+
+.tagline {
+    font-family: Boogaloo;
+    font-size: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+#canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+    display: block;
+}
+
+.time-minis {
+    text-align: center;
+    margin: auto;
+}
+
+li {
+    margin: 15px 0;
+}
+
+header {
+    margin-left: 100;
+}

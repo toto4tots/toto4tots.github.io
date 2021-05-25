@@ -21,8 +21,6 @@ ul {
     padding-left: 0;
 }
 
-
-
 #intro {
     /* height: 200px; */
     /* width: 70%;
@@ -32,3 +30,30 @@ ul {
     text-align: center;
     padding-top: 50;
 }
+
+.projects {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center; 
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    margin: 0;
+}
+
+a:link, a:visited {
+  color:gray;
+}
+
+/* 
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.projects:after {
+    display: table;
+    clear: both;
+} */

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Analog clock</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="time.css">
+    <link rel="stylesheet" href="../main.css">
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Home</a>
+    </header>
+    <canvas id="canvas" width=400 height=400></canvas>
+    <div class="tagline">"Oh, Look at the Time!"</div>
+    <!-- <div>"Oh, Look at the Time!"</div> -->
+    <p>
+        <div class="time-minis">
+            <ul>
+                <li>
+                    Here is time in hexadecimal <span id="hex-time">000000</span>.<br>
+                    Here it is reversed <span id="rev-hex-time">000000</span>.
+                </li>
+                <li>
+                    할머니는 지금 자고있나? 
+                    <span id="kst">00:00</span>
+                </li>
+                <li>
+                    The life expectancy percentage passed/remaining<br>
+                    of someone born in <span id="born">2000</span><br>
+                    <span id="passed">0</span>%<br><span id="remaining">0</span>%
+                </li>
+                <li>
+                    The time you spent on this page
+                    <span id="spent">0s</span>
+                </li>
+            </ul>
+        </div>
+    </p>
+    <script src="clock.js"></script>
+    <script src="hextime.js"></script>
+</body>
+
+</html>
+<source>
