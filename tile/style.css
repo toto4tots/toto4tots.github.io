@@ -1,0 +1,24 @@
+
+#canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+    margin-top: 2%;
+    display: block;
+}
+
+h2 {
+    margin-top: 1%;
+}
+
+#collect-button {
+    margin-top: 1%;
+}
+
+img {
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+    margin-top: 2%;
+    display: block;
+}
