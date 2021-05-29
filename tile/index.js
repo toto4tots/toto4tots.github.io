@@ -13,11 +13,13 @@ function displayCircles(circles) {
     }
 }
 
-function handleClick() {
+function handleClick(button) {
     let target = document.getElementById("collection");
     if (target.style.display !== "none") {
+        button.textContent = "More";
         target.style.display = "none";
     } else {
+        button.textContent = "Less";
         target.style.display = "block";
     }
 }
