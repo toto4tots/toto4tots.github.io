@@ -9,26 +9,33 @@
     <body>
         <script src=render.js></script>
         <script src=renderPage.js></script>
-        <header>
+        <header id="home-link">
             <a href="index.html">Home</a>
         </header>
-        <div>
+        <div id="details">
             <div>
                 <h2>Render an obj file</h2>
+                <p>
+                    Created a Phong Model based raycaster using Jamis Buck’s 
+                    <a href="http://raytracerchallenge.com/">
+                        <cite>The Ray Tracer Challenge</cite>
+                    </a>
+                    and added a simple obj parser.<br>Written in Typescript
+                </p>
                 
                 <textarea id="obj-string" placeholder="Enter obj content"></textarea>
                 <canvas id="picture" width="100" height="50"></canvas>
             </div>
             <div>
                 <label for="width">Width</label>
-                <input name="width", id="width" type="text"><br>
+                <input name="width", id="width" type="text" value=150><br>
                 <label for="height">Height</label>
-                <input name="height" id="height" type="text"><br>
+                <input name="height" id="height" type="text" value=150><br>
                 <div>Light Coordinate</div>
                 <label for="light-x">x</label>
-                <input id="light-x" class="light-coord" type="text">
+                <input id="light-x" class="light-coord" type="text" value=-10>
                 <label for="light-y">y</label>
-                <input id="light-y" class="light-coord" type="text"><br>
+                <input id="light-y" class="light-coord" type="text" value=10><br>
                 <input id="button" type="submit" name="button"
                     onclick="render(document.getElementById('width').value, 
                     document.getElementById('height').value, 
@@ -36,24 +43,18 @@
                     value="submit" />
                 <input id="button" type="submit" name="clear" value="clear" onclick="reload()"/>
             </div>
-        </div>
-
-        <div id="examples">
+            <div id="examples">
                 <div>
                     <h2>Examples</h4>
-                    <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/gourd.obj">Gourd</a><br/>
-                    <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/dodecahedron.obj">Dodecahedron</a><br/>
-                    <a href="https://groups.csail.mit.edu/graphics/classes/6.837/F03/models/teapot.obj">Teapot</a>
+                        <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/gourd.obj">Gourd</a><br />
+                        <a href="https://people.sc.fsu.edu/~jburkardt/data/obj/dodecahedron.obj">Dodecahedron</a><br />
+                        <a href="https://groups.csail.mit.edu/graphics/classes/6.837/F03/models/teapot.obj">Teapot</a>
                 </div>
                 <a><img src="images/teapot.png"></a>
+            
+            </div>
+        </div>
 
-        </div>
-        
-        <div id="references">
-            <h2>References</h2>
-            <ul>
-                <li>The Ray Tracer Challenge by Jamis Buck</li>
-            </ul>
-        </div>
+
     </body>
 </html>
