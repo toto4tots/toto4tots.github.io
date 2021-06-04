@@ -23,11 +23,6 @@ ul {
 }
 
 #intro {
-    /* height: 200px; */
-    /* width: 70%;
-    margin: 0 auto;
-    position: relative;
-    top: 100px;     */
     text-align: center;
     padding-top: 50;
 }
@@ -60,4 +55,8 @@ li {
 
 a:link, a:visited {
   color:gray;
+}
+
+#code-link {
+    font-size: 18px;
 }
