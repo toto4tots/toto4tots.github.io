@@ -1,39 +1,38 @@
+
 <html>
+    <head>
+        <title>Circle Tiles</title>
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<head>
-    <title>Circle Tiles</title>
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <header id="home-link">
+            <a href="../index.html">Home</a>
+        </header>
+        <script src="https://unpkg.com/roughjs@4.3.1/bundled/rough.js"></script>
+        <canvas id="canvas" width=400 height=400 style="border: 1px solid #000000;"></canvas>
+        <div class="description">
+            <h2>Circle Tiles</h2>
+            <div>Based on Paul Bourke's <a href="http://paulbourke.net/fractals/randomtile/">article</a>.</div>
+            <div>In summary, an intuitive approach to tiling (filling a space with no overlaps) is to find a series of shapes with
+            smaller areas that eventually add up to the area of the canvas and couple it with a collision detection system. One way
+            to systematically find these areas is using the Riemann zeta function. Since the tiling is made up of circles, 
+            simply comparing the distance with the radii is sufficient for detecting collisions.
+            </div>
+            <div>Written in Javascript with Rough.js</div>
+            <div>
+                <a id="code-link" href="https://github.com/toto4tots/toto4tots.github.io/tree/master/tile">code</a>
+            </div>
 
-<body>
-    <header id="home-link">
-        <a href="../index.html">Home</a>
-    </header>
-    <script src="https://unpkg.com/roughjs@4.3.1/bundled/rough.js"></script>
-    <canvas id="canvas" width=400 height=400 style="border: 1px solid #000000;"></canvas>
-    <div class="description">
-        <h2>Circle Tiles</h2>
-        <div>Based on Paul Bourke's <a href="http://paulbourke.net/fractals/randomtile/">article</a>.</div>
-        <div>In summary, an intuitive approach to tiling (filling a space with no overlaps) is to find a series of shapes with
-        smaller areas that eventually add up to the area of the canvas and couple it with a collision detection system. One way
-        to systematically find these areas is using the Riemann zeta function. Since the tiling is made up of circles, 
-        simply comparing the distance with the radii is sufficient for detecting collisions.
-        </div>
-        <div>Written in Javascript with Rough.js</div>
-        <div>
-            <a id="code-link" href="https://github.com/toto4tots/toto4tots.github.io/tree/master/tile">code</a>
-        </div>
-
-        <button id="collect-button" onclick="handleClick(this)">More</button>
-        <div id="collection" style="display: none">
-            <img src="../images/overlap.png" width="400" height="400">
-        </div>       
-        <script src="circle.js"></script>
-        <script src="tools.js"></script>
-        <script src="index.js"></script>
-
-
-</body>
-
+            <button id="collect-button" onclick="handleClick(this)">More</button>
+            <div id="collection" style="display: none">
+                <img src="../images/overlap.png" width="400" height="400">
+                <img src="../images/tile2.png" width="500" height="300">
+                <img src="../images/tile3.png" width="300" height="500">
+            </div>       
+            <script src="circle.js"></script>
+            <script src="tools.js"></script>
+            <script src="index.js"></script>
+    </body>
 </html>

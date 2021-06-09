@@ -18,11 +18,9 @@ function findRadius(area) {
     return Math.sqrt(area / Math.PI);
 }
 
-function createCircles(size) {
+function createCircles(size, n=1000, c=0.5) {
     const totalArea = size * size;
     let circles = [];
-    const n = 1000;
-    const c = 0.5;
     let failCount = 0;
 
     let initial = getInitialArea(totalArea, n, c);
