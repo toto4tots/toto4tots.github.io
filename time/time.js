@@ -81,7 +81,7 @@ function formatKST(timeArr) {
         night = true;
     }
     let hour = timeArr[0] % 12;
-    if (timeArr[0] === 0) {
+    if (hour === 0) {
         hour += 12;
     }    
     return [hour.toString(), timeArr[1]].join(":") + (night ? "pm" : "am");
