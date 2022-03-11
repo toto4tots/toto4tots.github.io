@@ -1,62 +1,102 @@
+body {
+  background-color: #fcfcfc;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lora', serif;
-    /* font-size: 25; */
+h1 {
+  font-size: 4em;
+  margin-top: 5%;
 }
 
 div {
-    font-family: 'Karla', sans-serif;
-    font-size: 20px;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+}
+
+.outer-container {
+  display: grid;
+  grid-gap: 5%;
+  height: 80%;
+  grid-template-rows: 1fr 2fr 1fr;
+  text-align: center;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 490px);
+  justify-content: center;
+}
+
+.footer-container {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, 490px);
+  place-content: end center;
+  margin: 10px;
+}
+
+.animate {
+  animation-duration: 1s;
+  animation-delay: 0.15s;
+  animation-name: fade-in;
+  animation-fill-mode: backwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.85, 0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 
 canvas {
-    vertical-align: top;
-    width: 400;
-    height: 400;
+  vertical-align: top;
+  width: 400;
+  height: 400;
 }
 
 ul {
-    /* list-style-position: inside; */
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#intro {
-    text-align: center;
-    padding-top: 50;
-}
-
-.projects {
-    margin: 0 auto;
-    width: 60%;
-    text-align: center; 
-}
-
-.column {
-    float: left;
-    width: 33.33%;
-    margin: 0;
-}
-
-.description {
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;    
+  list-style-type: none;
+  padding-left: 0;
 }
 
 li {
-    margin: 15px 0;
+  margin: 15px 0;
+}
+
+.projects {
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .home-link {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
-a:link, a:visited {
-  color:gray;
+a:link,
+a:visited {
+  color: gray;
 }
 
 .code-link {
-    font-size: 18px;
+  font-size: 18px;
 }
